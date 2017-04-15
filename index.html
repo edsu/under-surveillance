@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Under Surveillance: Power and Empowerment in the Social Media Archive</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+    <style>
+      @keyframes change {
+        from {
+          color: black;
+          transform: translateY(0px);
+        }
+        to {
+          color: red;
+          transform: translateY(20px);
+        }
+      }
+      div.up-down {
+        animation-delay: 5s;
+        animation-duration: 5s;
+        animation-name: change;
+        animation-fill-mode: forwards;
+        transition-timing-function: ease;
+      }
+
+      @keyframes hide {
+        0% {
+          color: black;
+        }
+        50% {
+          color: red;
+        }
+        100% {
+          color: black;
+        }
+      }
+      span.hidden {
+        animation-name: hide;
+        animation-duration: 10s;
+      }
+    </style>
+
+    <script>
+      function fade() {
+        var els = $(".splotch");
+        els.each(function(i, e) {
+          e = $(e)
+          var text = e.text()
+          var offset = Math.floor(Math.random() * text.length);
+          var html = $('<span>' + text.substring(0, offset) + '</span>')
+            .append('<span class="hidden">' + text[offset] + '</span>')
+            .append('<span>' + text.substring(offset+1) + '</span>')
+          e.html(html);
+        })
+        //els.on('animationend', fade);
+        setTimeout(fade, Math.floor(Math.random() * 10000 + 10000))
+      }
+
+      $(function() {
+        fade()
+      });
+
+    </script>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+        <section>
+          <div style="margin: auto; width: 70%; font-size: 52pt; font-weight: bold;">
+            <div style="float: left;" class="up-down">under&nbsp;</div>
+            <div style="text-align: left;">surveillance</div>
+          </div>
+          <br>
+          <div><span class="splotch">power &amp; empowerment</span><br>
+            <span class="splotch">in the social media archive</span></div>
+          <br>
+          <br>
+          Ed Summers<br>
+          <a href="http://mith.umd.edu">MITH</a><br>
+          <a href="mailto:ehs@pobox.com">ehs@pobox.com</a> / <a href="https://twitter.com/edsu">@edsu</a><br>
+          <aside class="notes">
+          </aside>
+        </section>
+
+				<section>
+          <h1>Overview</h1>
+          <ul>
+            <li>Project History</li>
+            <li>Work to date</li>
+            <li>Future directions</li>
+          </ul>
+        </section>
+
+        <section>
+          <section><h1>History</h1></section>
+        </section>
+
+        <section>
+          <section><h1>Work</h1></section>
+        </section>
+
+        <section>
+          <section><h1>Future</h1></section>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
