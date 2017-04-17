@@ -4,15 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Under Surveillance: Power and Empowerment in the Social Media Archive</title>
+		<title>Under Surveillance: Power &amp;Empowerment in the Social Media Archive</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,6 +22,7 @@
 		</script>
 
     <style>
+
       @keyframes change {
         from {
           color: black;
@@ -34,6 +33,7 @@
           transform: translateY(20px);
         }
       }
+
       div.up-down {
         animation-delay: 5s;
         animation-duration: 5s;
@@ -42,44 +42,11 @@
         transition-timing-function: ease;
       }
 
-      @keyframes hide {
-        0% {
-          color: black;
-        }
-        50% {
-          color: red;
-        }
-        100% {
-          color: black;
-        }
+      .reveal cite {
+        font-size: smaller;
       }
-      span.hidden {
-        animation-name: hide;
-        animation-duration: 10s;
-      }
+
     </style>
-
-    <script>
-      function fade() {
-        var els = $(".splotch");
-        els.each(function(i, e) {
-          e = $(e)
-          var text = e.text()
-          var offset = Math.floor(Math.random() * text.length);
-          var html = $('<span>' + text.substring(0, offset) + '</span>')
-            .append('<span class="hidden">' + text[offset] + '</span>')
-            .append('<span>' + text.substring(offset+1) + '</span>')
-          e.html(html);
-        })
-        //els.on('animationend', fade);
-        setTimeout(fade, Math.floor(Math.random() * 10000 + 10000))
-      }
-
-      $(function() {
-        fade()
-      });
-
-    </script>
 
 	</head>
 	<body>
@@ -93,8 +60,9 @@
             <div style="text-align: left;">surveillance</div>
           </div>
           <br>
-          <div><span class="splotch">power &amp; empowerment</span><br>
-            <span class="splotch">in the social media archive</span></div>
+          <div>power &amp; empowerment<br>
+            in the social media archive
+          </div>
           <br>
           <br>
           Ed Summers<br>
@@ -104,26 +72,241 @@
           </aside>
         </section>
 
-				<section>
-          <h1>Overview</h1>
-          <ul>
-            <li>Project History</li>
-            <li>Work to date</li>
-            <li>Future directions</li>
-          </ul>
+        <section>
+          <p>
+            Silences enter the process of historical production at four crucial
+            moments: the moment of fact creation (the making of sources); <em>the
+              moment of fact assembly (the making of archives);</em> the moment of fact retrieval (the making of narratives); and the moment of retrospective significance (the making of history in the final instance).
+          </p>
+          <cite>
+          Trouillot, Michel-Rolph. <a href="http://www.beacon.org/Silencing-the-Past-P1109.aspx">Silencing the past: power and the production of history</a>. Boston, Massachusetts: Beacon Press, 1997.
+          </cite>
         </section>
 
         <section>
           <section><h1>History</h1></section>
+
+          <section>
+            <img class="stretch" src="images/ferguson.jpg">
+            <cite>Bouie, Jamelle. <a href="https://commons.wikimedia.org/wiki/File:Protesters_with_signs_in_Ferguson.jpg">Protesters with signs in Ferguson</a>. 2014.</cite>
+            <aside class="notes">
+              <ul>
+                <li>August 9, 2014</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <a href="http://911digitalarchive.org/items/show/94340"><img class="stretch" src="images/911.jpg"></a><br>
+            <cite>
+              <a href="http://911digitalarchive.org/items/show/94340">[Untitled]</a>.  2001. <a href="http://911digitalarchive.org/">September 11 Digital Archive</a>.
+            </cite>
+            <aside class="notes">
+            </aside>
+          </section>
+
+          <section>
+            <a href="http://edsu.github.io/ferguson-tweet-viewer" target="_new"><img width="80%" src="images/townhall.png"></a><br> <cite> Richman, Talia. <a href="http://www.diamondbackonline.com/news/article_d8f7ce1c-7b3d-11e4-a697-5b2925f200ce.html">"Students, panelists discuss Ferguson at Town Hall meeting"</a>.<br><em>The Diamondback</em>. December 3, 2014.</cite>
+            <aside class="notes">
+              <ul>
+                <li>Town Hall</li>
+                <li>Teach-Ins: data collection, parsing, ethics, visualization</li>
+                <li>Research opportunities: Rashawn Ray, Melissa Brown</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <a href="http://timemapper.okfnlabs.org/edsu/blacklivesmatter"><img width="50%" src="images/blacklivesmatter.png"></a>
+            <br>
+            <cite>
+              <a href="https://commons.wikimedia.org/wiki/File:Black_Lives_Matter_logo.svg">Common social media logo/profile/avatar for the formal Black Lives Matter organization</a>. September 1, 2015.
+            </cite>
+            <aside>
+            </aside>
+          </section>
+
+          <section>
+            <img class="plain" width=250 src="images/wustl.png">
+            <img class="plain" width=250 src="images/ucr.png">
+            <img class="plain" width=250 src="images/umd.png">
+            <img class="plain" width=450 src="images/mellon.png">
+            <aside class="notes">
+              <ul>
+                <li>February 2016</li>
+                <li>Goals: further develop tools and ethical practices for social media archiving</li>
+              </ul>
+            </aside>
+          </section>
+
         </section>
 
         <section>
-          <section><h1>Work</h1></section>
+
+          <section>
+            <h1>Work</h1>
+          </section>
+
+          <section>
+            <a href="http://www.docnow.io/meetings/stl-2016/"><img src="images/advisory-board.png"></a>
+            <cite><a href="http://www.docnow.io/meetings/stl-2016/">DocNow Advisory Board Meeting</a>. August 22-23, 2016. St Louis, Missouri.</cite>
+            <aside class="notes">
+              <p>
+              People: Natalie Bauer, Merdith Clark, Tressie McMillan Cottom,
+              Brian Dietz, Jarrtt Drake, Meredith Evans, Jonathan Fenderson,
+              Deen Freelon, Jessica Johnson, Robin Katz, David Kim, Mark Anthony
+              Neal, Michael Nelson, Yvonne Ng, Matt Phillips, Rashawn Ray,
+              Nicholas Taylor, Dexter Thomas, Stacie Williams, Micah Zeller.
+              </p>
+              <p>
+              Also: Bergis Jules, Vernon Mitchell, Desiree Jones, Francis
+              Kayiwa, Dan Chudnov, Alexandra Dolan-Mescal
+              </p>
+            </aside>
+          </section>
+
+          <section>
+            <img class="plain" src="images/slack.png">
+            <br>
+            <cite>
+              <a href="https://docnowteam.slack.com">docnowteam.slack.com</a>
+            </cite>
+            <aside class="notes">
+              <ul>
+                <li>270 members</li>
+                <li>channels for design, ethics, tools, research and core for
+                  group coordination</li>
+                <li>Code of Conduct: adapted from the Geek Feminism</li>
+            </aside>
+          </section>
+
+          <section data-background-color="black">
+            <div style="font-family: monospace; font-size: 26pt; color: #00ff00;">
+            % <a style="text-decoration: none; color: #00ff00;" href="https://github.com/docnow/twarc">twarc</a> search blacklivesmatter &gt; tweets.json
+            </div>
+            <aside class="notes">
+              <ul>
+                <li>command line: search, track, sample</li>
+                <li>groups at Georgia Tech, Penn State, ODU</li>
+                <li>SFM integration</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section data-background="images/proto.png">
+            <h1 style="background-color: white; border: thin solid #ccc; padding: 20px;"><a href="http://app.docnow.io">app.docnow.io</a></h1>
+            <aside class="notes">
+              <ul>
+                <li>2 million tweets collected, in 234 different datasets created by 44 users</li>
+              44 users.
+            </aside>
+          </section>
+
+          <section>
+            <img class="plain" src="images/twitter-tos.png"">
+          </section>
+
+          <section data-background-image="images/tweet-ids.png">
+            <h2 style-background-color: white; border: thin solid #ccc; padding: 20px;"><a href="http://www.docnow.io/catalog/">www.docnow.io/catalog</a></h2>
+          </section>
+
+          <section>
+            <a href="https://github.com/docnow/hydrator"><img class="plain" style="width: 40%;" src="images/hydrator.png"></a>
+          </section>
+
         </section>
 
         <section>
-          <section><h1>Future</h1></section>
+
+          <section>
+            <h1>Challenges</h1>
+          </section>
+
+          <section>
+            <a href="http://www.stltoday.com/news/local/crime-and-courts/ferguson-protester-who-threw-back-tear-gas-cannister-in-iconic/article_437076f9-a6a2-5f03-a2fb-d612611a504f.html"><img src="images/crawford.png"></a> <aside class="notes">
+              Edward Crawford was charged with assault a year later based on the photo. The photographer Robert Cohen won the Pulitzer Prize.
+            </aside>
+          </section>
+
+          <section>
+            <img class="plain" src="images/email.png">
+          </section>
+
+          <section>
+            <a href="http://www.baltimoresun.com/news/maryland/investigations/bs-md-geofeedia-police-20160902-story.html"><img src="images/geofeedia.png"></a>
+            <aside class="notes">
+              <p>Baltimore police spokesman T.J. Smith said. "We're not looking for what you did last night and your selfies and your Snapchats.  We don't have time for that."</p>
+            </aside>
+          </section>
+
+          <section>
+            <a href="https://commons.wikimedia.org/wiki/File:Cover_slide_of_PRISM.jpg"><img width="60%" src="images/prism.jpg"></a>
+            <br>
+            <cite> Gellman, B. and Poitras, L. <a href="https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/2013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html">"U.S., British intelligence mining data from nine U.S.  Internet companies in broad secret program.</a>" <em>Washington Post</em>. June 7, 2013.
+            </cite>
+            <aside class="notes">
+              In many ways these tools developed by the NSA and CIA speak to 
+              the archival imaginary. But these powerful organizations don't 
+              need us to develop tools. However citizen archivists and others
+              do.
+            </aside>
+          </section>
+
+          <section>
+            <img src="images/zoe-quinn.jpg">
+            <br>
+            <cite>
+            Quinn, Zoe. <a href="https://commons.wikimedia.org/wiki/File:Zoe_Quinn_Camera_2014.jpg">Photograph of Zoe Quinn with camera, taken in 2014</a>
+            </cite>
+            <aside class="notes">
+              Gamergate harrassment of individuals such as Zoe Quinn, Anita
+              Sarkeesian, Brianna Wu. Small number of individuals amplifying
+              their voices online to harras and doxx women online. While we want
+              to build tools that empower people working for public memory 
+              to document events, we don't want to empower bad actors.
+            </aside>
+          </section>
+
+          <section>
+				  <div style="text-align: left; width: 70%; margin-left: 15%;">
+						<h2>Appraisal</h2>
+						<p>The process of identifying materials offered to an archives that have sufficient <em>value</em> to be accessioned.</p>
+						<br>
+						<cite>
+						<a href="http://www2.archivists.org/glossary/terms/a/appraisal">Appraisal</a> in <em>A Glossary of Archival and Records Terminology.</em> Society of American Archivists.
+						</cite>
+					</div>
+          </section>
+
+          <section>
+            <img class="plain" src="images/deed-of-gift.png">
+            <br>
+            <cite>
+              <a href="http://blogs.loc.gov/loc/files/2010/04/LOC-Twitter.pdf">Gift Agreement</a> between Twitter and the Library of Congress. April, 2010.
+            </cite>
+          </section>
+
+          <section>
+            <a href="http://digital.wustl.edu/ferguson/"><img src="images/doc-ferguson.png"></a>
+            <aside class="notes">
+              The result of appraisal and deed of gift could be deposit in Omeka
+              instances. Could have been used in other event driven archiving:
+              Boston Marathon Bombing, 9/11 Archive, Archive of Police Violence
+              in Cleveland.
+            </aside>
+          </section>
+
         </section>
+
+				<section>
+          <h2>Thankyou!</h2>
+          <h3>Questions/Comments?</h3>
+          <ul>
+            <li><a href="mailto:ehs@pobox.com">ehs@pobox.com</a></li>
+            <li><a href="https://twitter.com/edsu">@edsu</a></li>
+            <li><a href="https://docs.google.com/forms/d/1Wk0JdF2Cty2VHMqpf_QlJXVKQdUtfeeFhaYRben3qaM/viewform">DocNow Slack</a></li>
+          </ul>
+				</section>	
 
 			</div>
 		</div>
